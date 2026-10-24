@@ -12,7 +12,8 @@ Keep that distinction visible until real product screenshots replace them.
 
 <div align="center">
 
-<img src="assets/images/1.png" alt="NovelFlow — Write. Organize. Publish. — product concept banner" width="100%">
+<img width="2172" height="724" alt="1" src="https://github.com/user-attachments/assets/181fc03c-af0e-4192-8bea-94aeacb9d851" />
+
 
 # NovelFlow
 
