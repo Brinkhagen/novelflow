@@ -475,6 +475,41 @@ This project is **not affiliated with, endorsed by, sponsored by or officially c
 **Repository license:** No open-source software license has been published for this project at this stage. Unless a license is explicitly added, all rights are reserved. The design concepts on this page are illustrative and are not an invitation to redistribute the artwork.
 
 ---
+## 🚀 Support NovelFlow on Kickstarter
+
+### Help us bring the next generation of web novel writing to life.
+
+**Great stories deserve great tools.**
+
+NovelFlow is an independent software project by **BRINKHAGEN**, created with one mission: to give web novel authors a powerful, beautifully designed workspace to write, organize, refine, and publish their stories.
+
+We're preparing a **Kickstarter crowdfunding campaign** to help turn NovelFlow from an ambitious concept into a fully functional desktop application.
+
+### What your support will help us build
+
+- **Professional Writing Studio** — A distraction-free writing environment for long-running novels.
+- **Advanced Novel Management** — Organize hundreds or thousands of chapters, volumes, characters, and storylines.
+- **Smart Publishing Tools** — Streamline chapter publishing workflows, starting with WebNovel Inkstone.
+- **EPUB & Manuscript Import** — Bring existing manuscripts into a structured writing workspace.
+- **AI-Assisted Writing** — Optional tools for editing, translation, consistency checks, and creative workflows.
+- **Cross-Platform Desktop App** — Designed for Windows and macOS, with further platform support to be evaluated.
+
+### Be part of the journey
+
+NovelFlow is being built with a long-term vision: empower authors to focus on storytelling while their software handles the complexity.
+
+**Kickstarter Campaign Status: In Preparation**
+
+The campaign is not live yet. Once launched, the official Kickstarter link, funding goal, rewards, and campaign details will be published here.
+
+⭐ **Star this repository** to support the project and follow its development.
+
+*Every great story begins with a first chapter. Help us write ours.*
+
+**Developed by BRINKHAGEN — Independent Software. Creative Freedom.**
+
+---
+
 
 <div align="center">
 
