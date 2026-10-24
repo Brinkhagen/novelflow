@@ -91,7 +91,7 @@ NovelFlow is envisioned as a local-first application built around the way serial
 
 ## Your stories. One organized library.
 
-<img src="assets/images/4.png" alt="NovelFlow Library — proposed desktop interface with novel cards, chapters and progress overview" width="100%">
+<img width="1586" height="992" alt="4" src="https://github.com/user-attachments/assets/a0dbb01a-c1e0-4f16-950b-21e233845524" />
 
 <p align="center"><sub>DESIGN CONCEPT 01 — LIBRARY · Illustrative interface, not an application screenshot.</sub></p>
 
@@ -126,7 +126,7 @@ The title and chapter information above are examples of the proposed data struct
 
 ## A writing environment built for focus
 
-<img src="assets/images/3.png" alt="NovelFlow Editor — concept interface with chapter navigation, rich-text manuscript and contextual notes" width="100%">
+<img width="1586" height="992" alt="3" src="https://github.com/user-attachments/assets/6b43a4c4-8a1b-4e00-8e78-29850e36f331" />
 
 <p align="center"><sub>DESIGN CONCEPT 02 — WRITING EDITOR · Proposed layout and tools.</sub></p>
 
@@ -163,7 +163,7 @@ This separation is a **design requirement**, not a claim that backup or version 
 
 ## Publish with control
 
-<img src="assets/images/2.png" alt="NovelFlow Publishing — concept interface for chapter queue, release controls and browser-assisted transfer" width="100%">
+<img width="1586" height="992" alt="2" src="https://github.com/user-attachments/assets/ad5cd4d2-27fe-402f-a4fe-aa880e809461" />
 
 <p align="center"><sub>DESIGN CONCEPT 03 — PUBLISHING CENTER · Planned integration and controls.</sub></p>
 
