@@ -475,6 +475,8 @@ This project is **not affiliated with, endorsed by, sponsored by or officially c
 **Repository license:** No open-source software license has been published for this project at this stage. Unless a license is explicitly added, all rights are reserved. The design concepts on this page are illustrative and are not an invitation to redistribute the artwork.
 
 ---
+<img width="1942" height="809" alt="NovelFlow_ Schreiben, Organisieren, Veröffentlichen" src="https://github.com/user-attachments/assets/f982f61c-bc96-42af-968e-512195b5ea7f" />
+
 ## 🚀 Support NovelFlow on Kickstarter
 
 ### Help us bring the next generation of web novel writing to life.
