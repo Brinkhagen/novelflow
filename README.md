@@ -1,586 +1,237 @@
-<div align="center">
+<!--
+NOVELFLOW — README IMAGE GUIDE
 
-# NovelFlow
+To add an image later, upload it to the stated repository path and replace the
+matching IMAGE SLOT comment with the Markdown line printed inside that comment.
+Until then, these comments are invisible on GitHub and no broken image appears.
 
-### Write. Organize. Publish.
+01  HERO:       assets/branding/novelflow-hero.png             (1600 × 500 px)
+02  LIBRARY:    assets/screenshots/library-preview.png        (1440 × 900 px)
+03  EDITOR:     assets/screenshots/editor-preview.png         (1440 × 900 px)
+04  PUBLISHING: assets/screenshots/publishing-preview.png     (1440 × 900 px)
 
-**A professional desktop writing and publishing studio for web novel authors.**
+Use "Concept Preview" on mockups until actual application screenshots exist.
+-->
 
-Built by **Brinkhagen**.
+<!-- IMAGE SLOT 01 — HERO BANNER
+Upload: assets/branding/novelflow-hero.png
+Replace this whole comment with:
+![NovelFlow — Write. Organize. Publish.](assets/branding/novelflow-hero.png)
+-->
 
-<br>
+<h1 align="center">NovelFlow</h1>
 
-![Status](https://img.shields.io/badge/status-in%20development-c9a96e)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-blue)
-![Desktop](https://img.shields.io/badge/desktop-Electron-47848F)
-![Language](https://img.shields.io/badge/UI-multilingual-success)
+<p align="center"><strong>Write. Organize. Publish.</strong></p>
 
-</div>
+<p align="center">A modern desktop writing and publishing studio for serialized fiction and web novel authors.</p>
 
----
+<p align="center"><em>Designed for long-running stories. Built by BRINKHAGEN.</em></p>
 
-## About NovelFlow
-
-NovelFlow is a modern desktop workspace for authors who publish serialized fiction and web novels.
-
-It combines a distraction-free writing environment, structured book and chapter management, rich-text editing, and publishing tools in one application.
-
-Instead of writing in one application, organizing chapters somewhere else, and manually copying every chapter into a publishing platform, NovelFlow brings the complete workflow into a single workspace.
-
-> Write your story. Organize your chapters. Publish when you're ready.
-
----
-
-## Core Features
-
-### Professional Writing Editor
-
-Write directly inside NovelFlow using a modern rich-text editor designed for long-form fiction.
-
-Planned editor features include:
-
-- Bold, italic and underline
-- Headings and section breaks
-- Lists and blockquotes
-- Text alignment
-- Undo / Redo
-- Find and Replace
-- Word and character count
-- Focus mode
-- Keyboard shortcuts
-- Automatic saving
-- Revision history
-
-NovelFlow stores manuscripts in a structured document format so content can later be exported cleanly to different formats and publishing platforms.
+<p align="center"><strong>Status:</strong> Early development · <strong>Platforms:</strong> Windows / macOS (planned) · <strong>First publishing target:</strong> WebNovel Inkstone</p>
 
 ---
 
-## Books, Volumes & Chapters
+## The idea
 
-NovelFlow is designed to keep even very large serialized novels organized.
+Writing a 500-chapter novel should not mean managing hundreds of disconnected documents, losing track of characters, or copying each chapter into a publishing website by hand.
+
+**NovelFlow** aims to bring the entire workflow into one focused desktop application:
+
+**Import → Organize → Write & Revise → Review → Queue → Publish**
+
+The project is currently in **early development**. The interfaces and capabilities described below are product goals, **not claims that a complete app is already available**.
+
+## A workspace built for long-form fiction
+
+| Writing | Organization | Publishing |
+| --- | --- | --- |
+| Rich-text chapter editor | Books, volumes and chapters | WebNovel / Inkstone integration (planned) |
+| Autosave and revision history | Drafts, notes and chapter status | Draft transfer and review (planned) |
+| Word and character counts | Large-series navigation | Publishing queue (planned) |
+| Search and replace | Series Bible and continuity tools (future) | Additional platform adapters (future) |
+
+### Your library, at a glance
+
+<!-- IMAGE SLOT 02 — LIBRARY PREVIEW
+Upload: assets/screenshots/library-preview.png
+Replace this whole comment with:
+![NovelFlow library — concept preview](assets/screenshots/library-preview.png)
+-->
+
+**Planned:** Keep multiple books in a structured library, with volumes, numbered chapters, unsorted drafts, search, and clear progress indicators.
 
 ```text
-Book
-├── Volume 1
-│   ├── Chapter 001
-│   ├── Chapter 002
-│   └── Chapter 003
-│
-├── Volume 2
-│   ├── Chapter 004
-│   └── Chapter 005
-│
-└── Unsorted Drafts
+My Library
+└── Book: The First Ascendant
+    ├── Volume 01 — Awakening
+    │   ├── Chapter 001 — Exile           [Draft]
+    │   ├── Chapter 002 — The Signal      [Ready]
+    │   └── Chapter 003 — First Contact   [Ready]
+    ├── Volume 02 — New Horizons
+    └── Unsorted Drafts
 ```
 
-Each chapter can contain its own:
+### A writing space that stays out of the way
 
-- Title
-- Word count
-- Notes
-- Status
-- Last edited date
-- Publishing status
-- Platform metadata
+<!-- IMAGE SLOT 03 — EDITOR PREVIEW
+Upload: assets/screenshots/editor-preview.png
+Replace this whole comment with:
+![NovelFlow rich-text editor — concept preview](assets/screenshots/editor-preview.png)
+-->
 
----
+**Planned editor capabilities:**
 
-## Chapter Workflow
+- Rich-text formatting: bold, italic, headings, lists, quotes and alignment
+- Distraction-free writing, keyboard shortcuts and focus mode
+- Automatic saving, local drafts and revision history
+- Word count, character count, search and replace
+- Structured document storage to preserve the manuscript independently of any publishing platform
 
-NovelFlow uses a simple publishing workflow:
+## From manuscript to publication
 
-```text
-Draft
-   ↓
-Ready
-   ↓
-Uploaded
-   ↓
-Published
-```
+<!-- IMAGE SLOT 04 — PUBLISHING PREVIEW
+Upload: assets/screenshots/publishing-preview.png
+Replace this whole comment with:
+![NovelFlow publishing queue — concept preview](assets/screenshots/publishing-preview.png)
+-->
 
-This makes it easy to see which chapters are still being written, which are ready for review, and which have already been published.
-
----
-
-## Inkstone / WebNovel Publishing
-
-One of NovelFlow's first publishing integrations is planned for **WebNovel Inkstone**.
-
-Users authenticate directly with WebNovel through an embedded browser session. NovelFlow does not need to store the user's WebNovel password.
-
-The publishing workflow is designed around:
-
-- Opening Inkstone inside NovelFlow
-- Logging into WebNovel directly
-- Selecting ready chapters
-- Automatically filling chapter titles
-- Transferring chapter content
-- Preserving supported formatting
-- Saving chapters as drafts
-- Reviewing chapters before publication
-- Publishing selected chapters
-- Tracking local and remote publishing status
-
-Example workflow:
+NovelFlow's first publishing integration is intended for **WebNovel Inkstone**. Because no officially supported public chapter-upload API is currently assumed, the planned approach uses a browser-based publishing adapter.
 
 ```text
-NovelFlow Editor
-       ↓
-Ready for Publishing
-       ↓
-Inkstone
-       ↓
-Upload as Draft
-       ↓
-Review
-       ↓
-Publish
-```
-
-Publishing automation is intended to keep authors in control of every release.
-
----
-
-## Publishing Queue
-
-Authors can prepare multiple chapters before uploading them.
-
-| Chapter | Words | Status |
-|---|---:|---|
-| Chapter 021 — The Arrival | 2,840 | Published |
-| Chapter 022 — The Fleet | 3,120 | Published |
-| Chapter 023 — The Golden Fleet | 2,481 | Ready |
-| Chapter 024 — First Contact | 3,054 | Ready |
-| Chapter 025 — A New Threat | 2,910 | Draft |
-
----
-
-## Integrated Browser
-
-NovelFlow is being designed as a desktop application with an embedded Chromium environment.
-
-This allows supported publishing platforms to run directly inside NovelFlow while keeping authentication inside the platform's own website.
-
-```text
-┌──────────────────────── NovelFlow ────────────────────────┐
-│                                                          │
-│ Chapters       Writing Editor          Publishing         │
-│                                                          │
-│ Chapter 23     Your manuscript...      WebNovel ✓         │
-│ Chapter 24                              Royal Road         │
-│ Chapter 25                              Future Platforms   │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
-
-The embedded browser is planned to support:
-
-- Persistent local login sessions
-- Inkstone navigation
-- Chapter editor detection
-- Chapter title transfer
-- Chapter content transfer
-- Draft creation
-- Manual review before publishing
-- Publishing queue processing
-
----
-
-## Rich-Text Formatting
-
-NovelFlow is not intended to be a plain-text editor.
-
-The editor is planned to support structured rich-text content including:
-
-- **Bold**
-- *Italic*
-- Underline
-- Headings
-- Paragraphs
-- Lists
-- Quotes
-- Horizontal separators
-- Alignment
-- Links
-- Supported inline formatting
-
-The editor will use a structured internal document model so formatting can be converted per publishing platform.
-
-```text
-NovelFlow Rich Text
+NovelFlow manuscript
         ↓
-Platform Adapter
+Select and validate chapters
         ↓
-Inkstone-Compatible Content
+Publishing queue
+        ↓
+WebNovel Inkstone in an embedded browser
+        ↓
+Transfer title and formatted content
+        ↓
+Save as draft → Review → Publish
+        ↓
+Record the result locally
 ```
 
-Unsupported formatting can be simplified safely during publishing without changing the manuscript stored inside NovelFlow.
+The goal is to let authors prepare many chapters, review transfers, and publish without repeated copy-and-paste.
 
----
+**Publishing safeguards (planned):**
 
-## Multilingual by Design
+- User signs in on WebNovel's own website, not in a NovelFlow password form
+- Explicit confirmation before publishing chapters
+- Detection of failed or duplicate transfers
+- Local status tracking for pending, uploaded and published chapters
+- Platform-specific formatting conversion that does not overwrite the original manuscript
+- Scheduling support **only where technically available and verified**
 
-NovelFlow is designed from the beginning for international authors.
+Browser automation can break when a publishing platform changes its interface, and platform rules still apply. **A 500-chapter batch upload or scheduled release is a target to test, not a currently verified feature.**
 
-The application architecture separates:
+## EPUB import, translation and AI-assisted workflows
 
-- Interface language
-- Book language
-- Source language
-- Target language
-- Publishing language
+A major long-term goal is a source-to-manuscript workspace for large stories.
 
-Example:
+**Planned workflow:**
+
+1. Import an EPUB, TXT, HTML or Markdown manuscript.
+2. Detect the book structure and extract chapters.
+3. Organize chapters, characters, terminology and story context.
+4. Translate, rewrite or develop authorized material with optional AI assistance.
+5. Compare source and edited drafts side by side.
+6. Review the final text and move approved chapters to the publishing queue.
+
+Potential AI tools include chapter editing, grammar and dialogue improvements, style checks, Series Bible references, timeline checks, character consistency and continuity detection.
+
+**AI is optional and is not built into the initial release.** Future integrations may use third-party API keys, with separate provider costs. Authors are responsible for having the rights needed to adapt, translate or publish imported content.
+
+## Architecture (proposed)
+
+NovelFlow is planned as a local-first cross-platform desktop application.
 
 ```text
-Interface Language: German
-Book Language: English
-Source Language: Chinese
-Target Language: English
-Publishing Language: English
+NovelFlow Desktop
+├── Electron
+│   ├── React + TypeScript interface
+│   └── Secure embedded browser for publishing
+├── Writing & Organization
+│   ├── Rich-text document model
+│   ├── Books / volumes / chapters
+│   └── Search, drafts and revision history
+├── Local Storage
+│   ├── SQLite project data
+│   └── Backups and manuscript exports
+├── Import / Export
+│   ├── EPUB, Markdown, TXT and HTML (planned)
+│   └── DOCX and additional formats (future)
+├── Publishing Adapters
+│   ├── WebNovel / Inkstone (first target)
+│   └── Other platforms (future)
+└── Optional AI Workspace (future)
+    ├── Model-provider connections
+    ├── Series Bible / context
+    └── Translation and editing tools
 ```
 
-Initial interface languages are planned to include:
+### Local-first by design
 
-- English
-- German
+Manuscripts should remain usable without a publishing account or an always-on internet connection. Online access is needed for platform publishing and any connected cloud AI services.
 
-Additional languages can be added through the localization system.
+**Security priorities:** context isolation, narrow IPC permissions, no direct Node.js access for untrusted website content, validated imports, encrypted sensitive local data where appropriate, and no publishing credentials committed to Git.
 
----
+## Roadmap
 
-## Import & Export
+The roadmap represents planned work. Items will be checked off **only after they have been implemented and tested**.
 
-### Planned Import Formats
+### Phase 1 — Writing foundation
 
-- Markdown
-- TXT
-- HTML
+- [ ] Electron desktop application and navigation
+- [ ] Local project database and backup strategy
+- [ ] Book, volume and chapter management
+- [ ] Rich-text editor, autosave and search
+- [ ] Chapter status and writing statistics
 
-### Planned Export Formats
+### Phase 2 — Import and editorial workflow
 
-- Markdown
-- TXT
-- HTML
-- DOCX
-- EPUB
+- [ ] EPUB, Markdown, TXT and HTML import
+- [ ] Chapter extraction and ordering
+- [ ] Side-by-side manuscript review
+- [ ] Import validation and export tools
 
----
+### Phase 3 — WebNovel publishing
 
-## Platform Integrations
+- [ ] Secure embedded browser and Inkstone login
+- [ ] Chapter title and content transfer
+- [ ] Draft upload, verification and error handling
+- [ ] Publishing queue and status tracking
+- [ ] Scheduling research and controlled testing
 
-NovelFlow is designed around a modular publishing adapter architecture.
+### Phase 4 — Professional and AI workflows
 
-### Planned
+- [ ] Series Bible, characters and worldbuilding
+- [ ] Timeline and continuity tools
+- [ ] Optional AI provider integration
+- [ ] Translation and localization workflows
+- [ ] Additional publishing platform adapters
 
-- WebNovel / Inkstone
+## Development status & availability
 
-### Future
+> **Early development / not production-ready.** The repository currently documents the product direction. No stable NovelFlow installer or finished publishing integration is being offered here yet.
 
-- Royal Road
-- Scribble Hub
-- Additional serialized-fiction platforms
+Screenshots added during this stage will be labeled **Concept Preview** until they show real implemented features.
 
-Each publishing integration is separated from the core writing environment so platform-specific changes can be updated without affecting the entire application.
+## Independence & trademarks
 
----
+NovelFlow is an independent project developed by **BRINKHAGEN**. It is not affiliated with, endorsed by, sponsored by or officially connected to WebNovel, Inkstone, Royal Road, Scribble Hub or their respective owners. Third-party names and trademarks belong to their owners.
 
-## Desktop Architecture
+## License
 
-NovelFlow is planned as a modern cross-platform desktop application.
-
-```text
-Desktop
-└── Electron
-
-Interface
-├── React
-└── TypeScript
-
-Editor
-└── Structured Rich Text
-
-Local Application Data
-└── SQLite
-
-Publishing
-└── Chromium-based platform adapters
-
-Localization
-└── i18n
-```
-
-This architecture allows NovelFlow to function locally while leaving room for future cloud synchronization and account-based services.
+No open-source license has been declared for this repository at this stage. Unless a separate license is added, all rights are reserved.
 
 ---
 
-## Privacy & Authentication
+<h3 align="center">NovelFlow</h3>
 
-NovelFlow is designed so third-party publishing credentials do not need to be stored by NovelFlow.
+<p align="center"><strong>Write. Organize. Publish.</strong></p>
 
-Where possible, authentication takes place directly inside the publishing platform's own browser environment.
+<p align="center"><em>Developed by BRINKHAGEN</em></p>
 
-```text
-User
- ↓
-Embedded Chromium
- ↓
-WebNovel Login
- ↓
-Authenticated Local Browser Session
-```
-
-NovelFlow should never require users to provide their publishing password directly to NovelFlow.
-
-Sensitive authentication information must never be committed to this repository.
-
----
-
-## Product Roadmap
-
-### Phase 1 — Writer
-
-- [ ] Desktop application shell
-- [ ] User interface
-- [ ] Project creation
-- [ ] Book management
-- [ ] Volume management
-- [ ] Chapter management
-- [ ] Rich-text editor
-- [ ] Autosave
-- [ ] Word counting
-- [ ] Character counting
-- [ ] Chapter status workflow
-- [ ] Search
-- [ ] Find and Replace
-- [ ] Keyboard shortcuts
-
-### Phase 2 — Publishing
-
-- [ ] Embedded Chromium browser
-- [ ] WebNovel authentication session
-- [ ] Inkstone detection
-- [ ] Chapter title transfer
-- [ ] Chapter content transfer
-- [ ] Formatting conversion
-- [ ] Draft upload
-- [ ] Manual review workflow
-- [ ] Publishing queue
-- [ ] Publication status tracking
-
-### Phase 3 — Professional Workflow
-
-- [ ] Revision history
-- [ ] Local backups
-- [ ] Import tools
-- [ ] Export tools
-- [ ] Writing statistics
-- [ ] Multi-language interface
-- [ ] Additional publishing platforms
-- [ ] Platform adapter framework
-
----
-
-## Future Modules
-
-NovelFlow is intended to grow into a complete professional workspace for serialized-fiction authors.
-
-Future modules may include:
-
-- Series Bible
-- Character database
-- Relationship tracking
-- Worldbuilding
-- Timeline management
-- Glossary
-- Notes
-- Research workspace
-- AI-assisted editing
-- AI writing assistance
-- Continuity checking
-- Translation workflows
-- Localization workflows
-- EPUB RAW import
-- Side-by-side source and translation editing
-
----
-
-## Future AI Workspace
-
-A future NovelFlow AI workspace may allow authors to connect AI providers and use project-specific context.
-
-Potential functions include:
-
-- Continue writing from existing chapters
-- Rewrite selected passages
-- Improve dialogue
-- Check grammar
-- Check style consistency
-- Detect continuity errors
-- Compare chapters with a Series Bible
-- Detect character inconsistencies
-- Detect timeline conflicts
-- Maintain terminology
-- Analyze manuscript structure
-
-The AI system should operate using relevant project context rather than treating each chapter as an isolated prompt.
-
----
-
-## Future Translation Workspace
-
-NovelFlow may later include a professional translation and localization workflow.
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│ RAW                    DRAFT                FINAL            │
-│                                                              │
-│ Original text          AI translation       Edited version   │
-│                                                              │
-│ 中文原文               English Draft        Final English    │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
-Potential features:
-
-- EPUB import
-- RAW chapter extraction
-- Source language detection
-- Target language selection
-- Translation memory
-- Glossary enforcement
-- Canon terminology
-- Character-name consistency
-- Side-by-side editing
-- Source comparison
-- Missing-content detection
-- Localization checks
-
----
-
-## Planned Application Navigation
-
-```text
-NovelFlow
-│
-├── Dashboard
-│
-├── Projects
-│   └── Books
-│       ├── Overview
-│       ├── Volumes
-│       ├── Chapters
-│       └── Drafts
-│
-├── Library
-│
-├── Publishing
-│   ├── WebNovel
-│   └── Future Platforms
-│
-├── Statistics
-│
-└── Settings
-```
-
----
-
-## Planned Repository Structure
-
-```text
-novelflow/
-├── apps/
-│   └── desktop/
-│
-├── packages/
-│   ├── editor/
-│   ├── publishing/
-│   ├── database/
-│   ├── ui/
-│   └── i18n/
-│
-├── docs/
-│   ├── architecture/
-│   ├── product/
-│   └── publishing/
-│
-├── assets/
-│   ├── branding/
-│   └── screenshots/
-│
-├── README.md
-├── SECURITY.md
-├── CONTRIBUTING.md
-├── CHANGELOG.md
-└── ROADMAP.md
-```
-
----
-
-## Development Status
-
-> **NovelFlow is currently under active development.**
-
-The application is not yet considered production-ready.
-
-Architecture, user interface, publishing integrations and feature scope may change during development.
-
----
-
-## Security
-
-Security is an important part of NovelFlow's architecture.
-
-Planned principles include:
-
-- No publishing passwords stored by NovelFlow
-- Authentication through official platform pages
-- Local browser sessions
-- Local encrypted application data where appropriate
-- No secrets committed to Git
-- Strict Electron security configuration
-- Context isolation
-- Disabled Node.js access for external web content
-- Platform adapters separated from the core application
-- Safe IPC boundaries
-- Input validation
-
----
-
-## Disclaimer
-
-NovelFlow is an independent software project developed by Brinkhagen.
-
-NovelFlow is not affiliated with, endorsed by, sponsored by, or officially connected to:
-
-- WebNovel
-- Inkstone
-- Royal Road
-- Scribble Hub
-- or their respective owners
-
-All third-party names, trademarks, logos and services remain the property of their respective owners.
-
----
-
-## Developed by Brinkhagen
-
-**NovelFlow** is developed and maintained by **Brinkhagen**.
-
-Software. Digital products. Technology.
-
----
-
-<div align="center">
-
-# NovelFlow
-
-### Write. Organize. Publish.
-
-**Built by Brinkhagen**
-
-© 2026 Brinkhagen. All rights reserved.
-
-</div>
+<p align="center">© 2026 BRINKHAGEN. All rights reserved.</p>
